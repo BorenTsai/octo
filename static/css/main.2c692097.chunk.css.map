@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/index.css"],"names":[],"mappings":"AAAA,WACI,uBAAwB,CACxB,wFACJ","file":"main.2c692097.chunk.css","sourcesContent":["@font-face {\n    font-family: 'Pier-Sans';\n    src: local('Pier-Sans'), url(./fonts/PierSans-Light.ttf) format('truetype');\n}"]}
