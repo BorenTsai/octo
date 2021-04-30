@@ -6,6 +6,7 @@ import AboutContent from "../../content/AboutContent.json";
 import MissionContent from "../../content/MissionContent.json";
 import ProductContent from "../../content/ProductContent.json";
 import ContactContent from "../../content/ContactContent.json";
+import TeamContent from "../../content/TeamContent.json";
 
 const ContactFrom = lazy(() => import("../../components/ContactForm"));
 const ContentBlock = lazy(() => import("../../components/ContentBlock"));
@@ -18,12 +19,12 @@ const Home = () => {
     <Container>
       <ScrollToTop />
       <ContentBlock
-        type="right"
+        type="home"
         first="true"
         title={IntroContent.title}
         content={IntroContent.text}
         button={IntroContent.button}
-        icon="developer.svg"
+        icon="octoHome.svg"
         id="intro"
       />
       <MiddleBlock
@@ -36,14 +37,14 @@ const Home = () => {
         title={AboutContent.title}
         content={AboutContent.text}
         section={AboutContent.section}
-        icon="graphs.svg"
+        icon="octoEmotions.gif"
         id="about"
       />
       <ContentBlock
         type="right"
         title={MissionContent.title}
         content={MissionContent.text}
-        icon="product-launch.svg"
+        icon="sharedOcto.svg"
         id="mission"
       />
 
@@ -51,8 +52,12 @@ const Home = () => {
         type="left"
         title={ProductContent.title}
         content={ProductContent.text}
-        icon="waving.svg"
+        icon="calendGift.svg"
         id="product"
+      />
+      <MiddleBlock
+        title={TeamContent.title}
+        icon="team.svg"
       />
       <ContactFrom
         title={ContactContent.title}

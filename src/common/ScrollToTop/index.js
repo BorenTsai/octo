@@ -14,7 +14,7 @@ const Input = () => {
 
   return (
     <S.Up onClick={scrollUp}>
-      <SvgIcon src="scroll-top.svg" width="26px" height="26px" />
+      <SvgIcon src="up-arrow.svg" width="26px" height="26px" />
     </S.Up>
   );
 };

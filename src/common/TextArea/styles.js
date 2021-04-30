@@ -13,7 +13,7 @@ export const TextArea = styled.textarea`
   border-radius: 8px;
   padding: 1rem 1.25rem;
   resize: none;
-  font-size: 0.875rem;
+  font-size: 1.0rem;
   height: 185px;
   transition: border-color 0.3s ease-in;
 

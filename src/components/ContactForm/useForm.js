@@ -18,16 +18,16 @@ const useForm = (validate) => {
     event.preventDefault();
     setErrors(validate(values));
     // Your url for API
-    const url = "";
-    if (Object.keys(values).length === 3) {
+    const url = "https://sheet.best/api/sheets/7dc984b4-c09c-4670-afd8-a24b6314817e";
+      if (Object.keys(values).length === 3) {
       axios
-        .post(url, {
-          ...values,
-        })
+        .post(url,
+              values
+        )
         .then(() => {
           setShouldSubmit(true);
         });
-    }
+      }
   };
 
   useEffect(() => {
@@ -43,6 +43,7 @@ const useForm = (validate) => {
       ...values,
       [event.target.name]: event.target.value,
     }));
+    //console.log(errors);
     setErrors((errors) => ({ ...errors, [event.target.name]: "" }));
   };
 

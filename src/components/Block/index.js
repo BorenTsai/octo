@@ -8,6 +8,7 @@ const Block = ({ title, content, t }) => {
     <S.Container>
       <Fade left>
         <h6>{t(title)}</h6>
+        <S.Divider/>
         <S.TextWrapper>
           <S.Content>{t(content)}</S.Content>
         </S.TextWrapper>

@@ -17,6 +17,7 @@ export const ContentWrapper = styled.div`
   position: relative;
   max-width: 540px;
 
+
   @media only screen and (max-width: 480px) {
     margin: 2rem 0;
   }
@@ -26,4 +27,13 @@ export const ButtonWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   max-width: 400px;
+`;
+
+export const Divider = styled.div `
+  width: 80px;
+  height: 2px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  border-radius: 100px;
+  background-color: #4C4B63;
 `;

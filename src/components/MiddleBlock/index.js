@@ -3,11 +3,12 @@ import { Row, Col } from "antd";
 import { withTranslation } from "react-i18next";
 import Fade from "react-reveal/Fade";
 
+import SvgIcon from "../../common/SvgIcon";
 import * as S from "./styles";
 
 const Button = lazy(() => import("../../common/Button"));
 
-const MiddleBlock = ({ title, content, button, t }) => {
+const MiddleBlock = ({ title, content, button, icon, t }) => {
   const scrollTo = (id) => {
     const element = document.getElementById(id);
     element.scrollIntoView({
@@ -26,10 +27,22 @@ const MiddleBlock = ({ title, content, button, t }) => {
                 <Button
                   name="submit"
                   type="submit"
-                  onClick={() => scrollTo("mission")}
+                  onClick={() => scrollTo("contact")}
                 >
                   {t(button)}
                 </Button>
+              ) : (
+                ""
+              )}
+              {icon ? (
+                <Fade bottom>
+                  <SvgIcon
+                    src={icon}
+                    className="middle-block-image"
+                    width="100%"
+                    height="100%"
+                  />
+                </Fade>
               ) : (
                 ""
               )}

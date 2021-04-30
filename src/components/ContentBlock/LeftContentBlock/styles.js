@@ -6,7 +6,7 @@ export const LeftContentBlock = styled.section`
   padding: 10rem 0 8rem;
 
   @media only screen and (max-width: 768px) {
-    padding: 4rem 0 4rem;
+    padding: 4rem 0 4em;
   }
 `;
 
@@ -42,4 +42,13 @@ export const MinPara = styled.p`
 export const ServiceItem = styled(Col)`
   margin: 2rem 0;
   position: relative;
+`;
+
+export const Divider = styled.div `
+  width: 80px;
+  height: 2px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  border-radius: 100px;
+  background-color: #4C4B63;
 `;

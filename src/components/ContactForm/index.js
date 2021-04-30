@@ -11,7 +11,7 @@ import * as S from "./styles";
 const Block = lazy(() => import("../Block"));
 const Input = lazy(() => import("../../common/Input"));
 const Button = lazy(() => import("../../common/Button"));
-const TextArea = lazy(() => import("../../common/TextArea"));
+//const TextArea = lazy(() => import("../../common/TextArea"));
 
 const Contact = ({ title, content, id, t }) => {
   const { values, errors, handleChange, handleSubmit } = useForm(validate);
@@ -52,21 +52,30 @@ const Contact = ({ title, content, id, t }) => {
                   type="text"
                   name="email"
                   id="Email"
-                  placeholder="Your Email"
+                  placeholder="Your Email "
                   value={values.email || ""}
                   onChange={handleChange}
                 />
                 <ValidationType type="email" />
               </Col>
               <Col span={24}>
-                <TextArea
+              <Input
+                  type="text"
+                  name="partner_email"
+                  id="pEmail"
+                  placeholder="Partner's Email"
+                  value={values.partner_email || ""}
+                  onChange={handleChange}
+                />
+                <ValidationType type="partner_email" />
+                {/* <TextArea
                   placeholder="Your Message"
                   value={values.message || ""}
                   name="message"
                   id="Message"
                   onChange={handleChange}
                 />
-                <ValidationType type="message" />
+                <ValidationType type="message" /> */}
               </Col>
               <S.ButtonContainer>
                 <Button name="submit" type="submit">

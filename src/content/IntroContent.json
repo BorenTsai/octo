@@ -1,13 +1,15 @@
 {
-  "title": "Landing page template for developers & startups",
-  "text": "Beautifully designed templates using React.js, ant design and styled-components! Save weeks of time and build your landing page in minutes.",
+  "title": "Continue the Convo with Octo",
+  "text": "At Octo, our goal is to sustain relationships by improving communication. We believe that communicating emotions is critical to couples and we've designed a solution to address this.",
   "button": [
     {
-      "title": "Explore"
+      "title": "Join the Waitlist",
+      "ref": "contact"
     },
     {
-      "title": "Learn More",
-      "color": "#fff"
+      "title" : "Learn More",
+      "color": "fff",
+      "ref": "about"
     }
   ]
 }

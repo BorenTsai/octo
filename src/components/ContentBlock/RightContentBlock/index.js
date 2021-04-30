@@ -21,6 +21,7 @@ const RightBlock = ({ title, content, button, icon, t, id }) => {
           <Slide left>
             <S.ContentWrapper>
               <h6>{t(title)}</h6>
+              <S.Divider></S.Divider>
               <S.Content>{t(content)}</S.Content>
               <S.ButtonWrapper>
                 {button &&
@@ -31,7 +32,7 @@ const RightBlock = ({ title, content, button, icon, t, id }) => {
                         key={id}
                         color={item.color}
                         width="true"
-                        onClick={() => scrollTo("about")}
+                        onClick={() => scrollTo(item.ref)}
                       >
                         {t(item.title)}
                       </Button>

@@ -39,10 +39,10 @@ const Footer = ({ t }) => {
                 <S.Large to="/">{t("Tell us everything")}</S.Large>
                 <S.Para>
                   {t(
-                    `Do you have any question regarding the project? Feel free to reach out.`
+                    `Do you have any questions or feedback regarding octo? Feel free to reach out!`
                   )}
                 </S.Para>
-                <a href="mailto:l.qqbadze@gmail.com">
+                <a href="mailto:nadiaghaffari@berkeley.edu">
                   <S.Chat>{t(`Let's Chat`)}</S.Chat>
                 </a>
               </Col>
@@ -69,9 +69,9 @@ const Footer = ({ t }) => {
               <Col lg={10} md={10} sm={12} xs={24}>
                 <S.Empty />
                 <S.Language>{t("ADDRESS")}</S.Language>
-                <S.Para>Rancho Santa Margarita</S.Para>
-                <S.Para>2131 Elk Street</S.Para>
-                <S.Para>California</S.Para>
+                <S.Para>Sutardja Center for Enterpreneurship</S.Para>
+                <S.Para>and Technology</S.Para>
+                <S.Para>Berkeley, California</S.Para>
               </Col>
               <Col lg={8} md={8} sm={12} xs={24}>
                 <S.Title>{t("Company")}</S.Title>
@@ -115,7 +115,7 @@ const Footer = ({ t }) => {
               <S.NavLink to="/">
                 <S.LogoContainer>
                   <SvgIcon
-                    src="logo.svg"
+                    src="happyOcto.svg"
                     aria-label="homepage"
                     width="101px"
                     height="64px"
@@ -124,23 +124,23 @@ const Footer = ({ t }) => {
               </S.NavLink>
               <S.FooterContainer>
                 <SocialLink
-                  href="https://github.com/Adrinlol/create-react-app-adrinlol"
+                  //href="https://github.com/Adrinlol/create-react-app-adrinlol"
                   src="github.svg"
                 />
                 <SocialLink
-                  href="https://twitter.com/Adrinlolx"
+                  //href="https://twitter.com/Adrinlolx"
                   src="twitter.svg"
                 />
                 <SocialLink
-                  href="https://www.linkedin.com/in/lasha-kakabadze/"
+                  //href="https://www.linkedin.com/in/lasha-kakabadze/"
                   src="linkedin.svg"
                 />
                 <SocialLink
-                  href="https://github.com/Adrinlol/"
+                  //href="https://github.com/Adrinlol/"
                   src="instagram.svg"
                 />
                 <SocialLink
-                  href="https://medium.com/@lashakakabadze/"
+                  //href="https://medium.com/@lashakakabadze/"
                   src="medium.svg"
                 />
               </S.FooterContainer>
