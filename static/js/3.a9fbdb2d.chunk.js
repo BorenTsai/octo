@@ -1,2 +1,0 @@
-(this.webpackJsonpocto=this.webpackJsonpocto||[]).push([[3],{115:function(t,c,i){"use strict";i.r(c);var s=i(1);c.default=function(t){var c=t.src,i=t.width,h=t.height;return Object(s.jsx)("img",{src:"/img/svg/".concat(c),alt:c,width:i,height:h})}}}]);
-//# sourceMappingURL=3.a9fbdb2d.chunk.js.map
