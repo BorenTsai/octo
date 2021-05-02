@@ -8,7 +8,6 @@ export default function validate(values) {
   } else if (!/\S+@\S+\.\S+/.test(values.email)) {
     errors.email = "Email address is invalid";
   }
-  console.log(values);
   if (!values.partner_email) {
     errors.partner_email = "Partner email address is required";
   } else if (!/\S+@\S+\.\S+/.test(values.partner_email)) {
